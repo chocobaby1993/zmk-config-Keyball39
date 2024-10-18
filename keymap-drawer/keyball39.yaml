@@ -36,8 +36,8 @@ layers:
   - {t: '$$mdi:keyboard-esc$$', h: snipe}
   - {t: '$$mdi:keyboard-space$$', h: mouse}
   - {t: '$$mdi:keyboard-tab$$', h: scroll}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:backspace$$', h: symbol}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:keyboard-return$$', h: symbol}
   - $$mdi:apple-keyboard-shift$$
   number:
   - '1'
