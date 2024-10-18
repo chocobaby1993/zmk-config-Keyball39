@@ -33,7 +33,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - LGUI
   - LEFT WIN
-  - {t: '$$mdi:keyboard-esc$$', h: snipe}
+  - {t: '$$mdi:apple-keyboard-option$$', h: snipe}
   - {t: '$$mdi:keyboard-space$$', h: mouse}
   - {t: '$$mdi:keyboard-tab$$', h: scroll}
   - {t: '$$mdi:backspace$$', type: backspace}
