@@ -38,7 +38,7 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: scroll}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', h: symbol}
-  - $$mdi:apple-keyboard-shift$$
+  - LANG5
   number:
   - '1'
   - '2'
