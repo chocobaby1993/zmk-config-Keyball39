@@ -31,11 +31,11 @@ layers:
   - {t: ., s: '>'}
   - function
   - $$mdi:apple-keyboard-control$$
-  - LGUI
+  - '&mkp MB2'
   - LEFT WIN
-  - {t: '$$mdi:apple-keyboard-option$$', h: snipe}
+  - {t: LANGUAGE 6, h: snipe}
   - {t: '$$mdi:keyboard-space$$', h: mouse}
-  - {t: '$$mdi:keyboard-tab$$', h: scroll}
+  - {t: INT KANA, h: scroll}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', h: symbol}
   - LANG5
@@ -160,45 +160,45 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   mouse:
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - PgUp
+  - Ctl+ W
+  - F2
+  - F3
+  - F4
+  - F5
+  - Ctl+ X
+  - F7
+  - Ctl+ PgUp
+  - Ctl+ PgDn
+  - {t: Ctl+ 1, s: Ctl+ !}
+  - $$mdi:apple-keyboard-control$$
+  - Ctl+ T
+  - F6
+  - F12
+  - '&mkp MB2'
+  - Ctl+ C
   - $$mdi:mouse-left-click-outline$$
   - Gui+ $$mdi:arrow-up-bold$$
   - $$mdi:mouse-right-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - PgDn
+  - {t: Ctl+ 1, s: Ctl+ !}
+  - $$mdi:apple-keyboard-shift$$
+  - HOME
+  - END
+  - $$mdi:apple-keyboard-shift$$
+  - '&mkp MB1'
+  - Ctl+ V
   - Gui+ $$mdi:arrow-left-bold$$
   - Gui+ $$mdi:arrow-down-bold$$
   - Gui+ $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '!'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - \
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - LANGUAGE 5
   - {t: '$$mdi:transfer$$', type: trans}
   - function
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '?'
   scroll:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
