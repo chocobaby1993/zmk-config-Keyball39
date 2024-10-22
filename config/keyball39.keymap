@@ -49,24 +49,54 @@
         };
     };
 
+    macros {
+        new_macro4: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F &kp A &kp B>;
+            label = "NEW_MACRO";
+        };
+
+        new_macro0: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(Q) &kp LS(Z) &kp U &kp G &kp X &kp NUMBER_2 &kp J &kp I &kp R &kp LS(R)>;
+            label = "NEW_MACRO";
+        };
+
+        new_macro1: new_macro1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp Q &kp A &kp Z &kp X &kp S &kp W &kp N2>;
+            label = "NEW_MACRO1";
+        };
+
+        new_macro2: new_macro2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp N1 &kp N4 &kp N1 &kp N0 &kp N9 &kp N2>;
+            label = "NEW_MACRO2";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             label = "QWRT";
             bindings = <
-&kp Q           &kp W     &kp E         &kp R                    &kp T                                       &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A           &kp S     &kp D         &lt 4 F                  &lt 5 G                                     &kp H        &kp J  &kp K      &kp L    &lt 1 MINUS
-&kp Z           &kp X     &kp C         &kp V                    &kp B                                       &kp N        &kp M  &kp COMMA  &kp DOT  &mo 5
-&kp LEFT_SHIFT  &mkp MB2  &kp LEFT_WIN  &mt LEFT_ALT LANGUAGE_6  &lt 4 SPACE  &lt 5 INT_KANA  &kp BACKSPACE  &lt 2 ENTER                             &kp LANG5
+&kp Q           &kp W     &kp E         &kp R                      &kp T                                       &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A           &kp S     &kp D         &lt 4 F                    &lt 5 G                                     &kp H        &kp J  &kp K      &kp L    &lt 1 MINUS
+&kp Z           &kp X     &kp C         &kp V                      &kp B                                       &kp N        &kp M  &kp COMMA  &kp DOT  &mo 5
+&kp LEFT_SHIFT  &mkp MB2  &kp LEFT_WIN  &mt LEFT_ALT INT_MUHENKAN  &lt 4 SPACE  &lt 5 INT_KANA  &kp BACKSPACE  &lt 2 ENTER                             &kp LANG5
             >;
         };
 
         number_layer {
             label = "NUM";
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&kp LEFT      &kp DOWN      &kp UP_ARROW  &kp RIGHT     &none                         &none         &mkp MB1      &none         &none         &none
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+&bt BT_CLR    &kp DOWN      &kp UP_ARROW  &kp RIGHT     &none                         &none         &mkp MB1      &none         &none         &none
 &none         &none         &none         &none         &none                         &none         &none         &trans        &trans        &none
 &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans                                                  &trans
             >;
@@ -75,10 +105,10 @@
         symbol_layer {
             label = "SYM";
             bindings = <
-&kp DOLLAR   &kp SQT       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LA(UP_ARROW)                     &kp LC(LS(O))  &kp LG(D)       &kp HOME        &kp LG(L)        &kp ESCAPE
-&kp AT_SIGN  &bt BT_SEL 0  &bt BT_SEL 1          &bt BT_SEL 2           &kp LA(LEFT_ARROW)                   &kp LC(LS(N))  &mkp MB1        &kp UP_ARROW    &mkp MB2         &kp COLON
-&trans       &trans        &trans                &trans                 &kp LA(RIGHT_ARROW)                  &kp LC(N)      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp SEMICOLON
-&trans       &trans        &trans                &trans                 &trans               &trans  &trans  &trans                                                          &trans
+&kp DOLLAR           &kp SQT               &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS  &kp LA(UP_ARROW)                                  &kp LC(LS(O))  &kp LG(D)       &kp HOME        &kp LG(L)        &kp ESCAPE
+&kp AT_SIGN          &kp LS(N5)            &kp UNDER              &kp AMPERSAND          &kp LA(LEFT_ARROW)                                &kp LC(LS(N))  &mkp MB1        &kp UP_ARROW    &mkp MB2         &kp COLON
+&kp LEFT_SHIFT       &kp LEFT_WIN          &kp LS(DOUBLE_QUOTES)  &kp HASH               &kp LA(RIGHT_ARROW)                               &kp LC(N)      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp SEMICOLON
+&kp LC(LS(KP_PLUS))  &kp LS(LC(KP_MINUS))  &kp LA(F4)             &kp LEFT_SHIFT         &kp TAB              &kp INT_MUHENKAN  &kp RCTRL  &trans                                                          &trans
             >;
         };
 
@@ -95,10 +125,10 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&kp LC(W)       &kp F2     &kp F3                &kp F4          &kp F5                            &kp LC(X)  &kp F7              &kp LC(PAGE_UP)     &kp LC(PAGE_DOWN)    &kp LC(N1)
-&kp LCTRL       &kp LC(T)  &kp F6                &kp F12         &mkp MB2                          &kp LC(C)  &mkp LCLK           &kp LG(UP_ARROW)    &mkp RCLK            &kp LC(N1)
-&kp LEFT_SHIFT  &kp HOME   &kp END               &kp LEFT_SHIFT  &mkp MB1                          &kp LC(V)  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &kp EXCLAMATION
-&none           &trans     &kp NON_US_BACKSLASH  &trans          &trans    &kp LANGUAGE_5  &trans  &mo 3                                                                   &kp QUESTION
+&kp LC(W)       &kp F2          &kp F3                &kp F4          &kp F5                            &kp LC(X)  &kp F7              &kp LC(PAGE_UP)     &kp LC(PAGE_DOWN)    &kp LC(N1)
+&kp LCTRL       &kp LC(T)       &kp F6                &kp F12         &mkp MB2                          &kp LC(C)  &mkp LCLK           &kp LG(UP_ARROW)    &mkp RCLK            &kp LC(N1)
+&kp LEFT_SHIFT  &kp HOME        &kp END               &kp LEFT_SHIFT  &mkp MB1                          &kp LC(V)  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &kp EXCLAMATION
+&none           &kp KP_NUMLOCK  &kp NON_US_BACKSLASH  &trans          &trans    &kp LANGUAGE_5  &trans  &mo 3                                                                   &kp QUESTION
             >;
         };
 
