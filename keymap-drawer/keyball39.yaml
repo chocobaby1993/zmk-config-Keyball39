@@ -30,7 +30,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - scroll
-  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
   - '&mkp MB2'
   - LEFT WIN
   - {t: LANGUAGE 6, h: '$$mdi:apple-keyboard-option$$'}
