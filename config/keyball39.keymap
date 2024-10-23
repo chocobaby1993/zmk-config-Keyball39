@@ -135,8 +135,8 @@
         scroll_layer {
             label = "SCROLL";
             bindings = <
-&new_macro3  &kp ASTERISK     &kp KP_PLUS  &kp KP_MINUS      &kp EQUAL                       &kp PRINTSCREEN  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH
-&new_macro3  &kp LS(LC(TAB))  &kp LC(TAB)  &kp LG(NUMBER_4)  &kp LA(LCTRL)                   &kp PERIOD       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp COMMA
+&new_macro1  &kp ASTERISK     &kp KP_PLUS  &kp KP_MINUS      &kp EQUAL                       &kp PRINTSCREEN  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH
+&new_macro2  &kp LS(LC(TAB))  &kp LC(TAB)  &kp LG(NUMBER_4)  &kp LA(LCTRL)                   &kp PERIOD       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp COMMA
 &new_macro3  &trans           &trans       &trans            &trans                          &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EXCLAMATION
 &trans       &trans           &trans       &trans            &trans         &trans  &kp DEL  &trans                                                              &kp QUESTION
             >;
