@@ -3,7 +3,7 @@ layers:
   - Q
   - W
   - E
-  - R
+  - {t: R, h: symbol}
   - T
   - Y
   - U
@@ -25,7 +25,7 @@ layers:
   - C
   - V
   - B
-  - N
+  - {t: N, h: number}
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
@@ -65,7 +65,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -83,7 +83,7 @@ layers:
   - $
   - {t: '''', s: '"'}
   - (
-  - )
+  - {t: ), type: held}
   - Alt+ $$mdi:arrow-up-bold$$
   - Ctl+Sft+ O
   - {t: D, h: '$$mdi:apple-keyboard-command$$'}
@@ -117,7 +117,7 @@ layers:
   - $$mdi:keyboard-tab$$
   - INT MUHENKAN
   - $$mdi:apple-keyboard-control$$
-  - {type: held}
+  - {type: held alternate}
   - '&new_macro4'
   function:
   - F1
@@ -201,20 +201,20 @@ layers:
   - '?'
   scroll:
   - '&new_macro0'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '*'
+  - KP PLUS
+  - KP MINUS
+  - {t: '=', s: +}
   - PRINTSCREEN
   - KP 7
   - KP 8
   - KP 9
   - {t: /, s: '?'}
   - '&new_macro1'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - Sft+Ctl+ $$mdi:keyboard-tab$$
+  - Ctl+ $$mdi:keyboard-tab$$
+  - Gui+ 4
+  - {t: 'Alt+ $$mdi:apple-keyboard-control$$', type: held}
   - .
   - KP 4
   - KP 5
@@ -229,7 +229,7 @@ layers:
   - KP 1
   - KP 2
   - KP 3
-  - {t: ^, type: held alternate}
+  - {t: '!', type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -238,7 +238,7 @@ layers:
   - {type: held alternate}
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:apple-keyboard-control$$
+  - '?'
   snipe:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
