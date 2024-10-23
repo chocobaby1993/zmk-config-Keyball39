@@ -50,32 +50,32 @@
     };
 
     macros {
-        new_macro4: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp F &kp A &kp B>;
-            label = "NEW_MACRO";
-        };
-
-        new_macro1: new_macro {
+        new_macro10: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(Q) &kp LS(Z) &kp U &kp G &kp X &kp NUMBER_2 &kp J &kp I &kp R &kp LS(R)>;
             label = "NEW_MACRO";
         };
 
-        new_macro2: new_macro1 {
+        new_macro20: new_macro1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp N1 &kp Q &kp A &kp Z &kp X &kp S &kp W &kp N2>;
             label = "NEW_MACRO1";
         };
 
-        new_macro3: new_macro2 {
+        new_macro30: new_macro2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp N1 &kp N1 &kp N4 &kp N1 &kp N0 &kp N9 &kp N2>;
             label = "NEW_MACRO2";
+        };
+
+        new_macro40: new_macro40 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F &kp A &kp B>;
+            label = "NEW_MACRO40";
         };
     };
 
@@ -108,7 +108,7 @@
 &kp DOLLAR           &kp SQT               &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS  &kp LA(UP_ARROW)                                  &kp LC(LS(O))  &kp LG(D)       &kp HOME        &kp LG(L)        &kp ESCAPE
 &kp AT_SIGN          &kp LS(N5)            &kp UNDER              &kp AMPERSAND          &kp LA(LEFT_ARROW)                                &kp LC(LS(N))  &mkp MB1        &kp UP_ARROW    &mkp MB2         &kp COLON
 &kp LEFT_SHIFT       &kp LEFT_WIN          &kp LS(DOUBLE_QUOTES)  &kp HASH               &kp LA(RIGHT_ARROW)                               &kp LC(N)      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp SEMICOLON
-&kp LC(LS(KP_PLUS))  &kp LS(LC(KP_MINUS))  &kp LA(F4)             &kp LEFT_SHIFT         &kp TAB              &kp INT_MUHENKAN  &kp RCTRL  &trans                                                          &new_macro4
+&kp LC(LS(KP_PLUS))  &kp LS(LC(KP_MINUS))  &kp LA(F4)             &kp LEFT_SHIFT         &kp TAB              &kp INT_MUHENKAN  &kp RCTRL  &trans                                                          &new_macro40
             >;
         };
 
@@ -135,10 +135,10 @@
         scroll_layer {
             label = "SCROLL";
             bindings = <
-&new_macro1  &kp ASTERISK     &kp KP_PLUS  &kp KP_MINUS      &kp EQUAL                       &kp PRINTSCREEN  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH
-&new_macro2  &kp LS(LC(TAB))  &kp LC(TAB)  &kp LG(NUMBER_4)  &kp LA(LCTRL)                   &kp PERIOD       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp COMMA
-&new_macro3  &trans           &trans       &trans            &trans                          &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EXCLAMATION
-&trans       &trans           &trans       &trans            &trans         &trans  &kp DEL  &trans                                                              &kp QUESTION
+&new_macro10  &kp ASTERISK     &kp KP_PLUS  &kp KP_MINUS      &kp EQUAL                       &kp PRINTSCREEN  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH
+&new_macro20  &kp LS(LC(TAB))  &kp LC(TAB)  &kp LG(NUMBER_4)  &kp LA(LCTRL)                   &kp PERIOD       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp COMMA
+&new_macro30  &trans           &trans       &trans            &trans                          &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EXCLAMATION
+&trans        &trans           &trans       &trans            &trans         &trans  &kp DEL  &trans                                                              &kp QUESTION
             >;
         };
 
