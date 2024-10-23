@@ -200,7 +200,7 @@ layers:
   - function
   - '?'
   scroll:
-  - '&new_macro3'
+  - '&new_macro1'
   - '*'
   - KP PLUS
   - KP MINUS
@@ -210,7 +210,7 @@ layers:
   - KP 8
   - KP 9
   - {t: /, s: '?'}
-  - '&new_macro3'
+  - '&new_macro2'
   - Sft+Ctl+ $$mdi:keyboard-tab$$
   - Ctl+ $$mdi:keyboard-tab$$
   - Gui+ 4
