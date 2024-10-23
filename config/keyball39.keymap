@@ -57,21 +57,21 @@
             label = "NEW_MACRO";
         };
 
-        new_macro0: new_macro {
+        new_macro1: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(Q) &kp LS(Z) &kp U &kp G &kp X &kp NUMBER_2 &kp J &kp I &kp R &kp LS(R)>;
             label = "NEW_MACRO";
         };
 
-        new_macro1: new_macro1 {
+        new_macro2: new_macro1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp N1 &kp Q &kp A &kp Z &kp X &kp S &kp W &kp N2>;
             label = "NEW_MACRO1";
         };
 
-        new_macro2: new_macro2 {
+        new_macro3: new_macro2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp N1 &kp N1 &kp N4 &kp N1 &kp N0 &kp N9 &kp N2>;
@@ -135,9 +135,9 @@
         scroll_layer {
             label = "SCROLL";
             bindings = <
-&new_macro0  &kp ASTERISK     &kp KP_PLUS  &kp KP_MINUS      &kp EQUAL                       &kp PRINTSCREEN  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH
-&new_macro1  &kp LS(LC(TAB))  &kp LC(TAB)  &kp LG(NUMBER_4)  &kp LA(LCTRL)                   &kp PERIOD       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp COMMA
-&new_macro2  &trans           &trans       &trans            &trans                          &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EXCLAMATION
+&new_macro3  &kp ASTERISK     &kp KP_PLUS  &kp KP_MINUS      &kp EQUAL                       &kp PRINTSCREEN  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH
+&new_macro3  &kp LS(LC(TAB))  &kp LC(TAB)  &kp LG(NUMBER_4)  &kp LA(LCTRL)                   &kp PERIOD       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp COMMA
+&new_macro3  &trans           &trans       &trans            &trans                          &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EXCLAMATION
 &trans       &trans           &trans       &trans            &trans         &trans  &kp DEL  &trans                                                              &kp QUESTION
             >;
         };
