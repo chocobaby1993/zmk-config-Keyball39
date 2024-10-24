@@ -10,7 +10,7 @@ layers:
   - I
   - O
   - P
-  - A
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - S
   - D
   - {t: F, h: mouse}
@@ -20,7 +20,7 @@ layers:
   - K
   - L
   - {t: '-', h: number, s: _}
-  - Z
+  - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - X
   - C
   - V
@@ -33,9 +33,9 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - '&mkp MB2'
   - LEFT WIN
-  - {t: INT MUHENKAN, h: '$$mdi:apple-keyboard-option$$'}
+  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-space$$', h: mouse}
-  - {t: INT KANA, h: scroll}
+  - {t: LANGUAGE 5, h: scroll}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', h: symbol}
   - LANG5
@@ -92,8 +92,8 @@ layers:
   - $$mdi:keyboard-esc$$
   - '@'
   - {t: Sft+ 5, s: Sft+ %}
-  - _
-  - '&'
+  - {t: Sft+ \, s: Sft+ |}
+  - Sft+ 6
   - Alt+ $$mdi:arrow-left-bold$$
   - Ctl+Sft+ N
   - '&mkp MB1'
@@ -102,7 +102,7 @@ layers:
   - ':'
   - $$mdi:apple-keyboard-shift$$
   - LEFT WIN
-  - Sft+ "
+  - '"'
   - '#'
   - Alt+ $$mdi:arrow-right-bold$$
   - Ctl+ N
