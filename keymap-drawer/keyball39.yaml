@@ -90,7 +90,7 @@ layers:
   - HOME
   - Gui+ L
   - $$mdi:keyboard-esc$$
-  - '@'
+  - Sft+ 2
   - {t: Sft+ 5, s: Sft+ %}
   - {t: Sft+ \, s: Sft+ |}
   - Sft+ 6
@@ -221,8 +221,8 @@ layers:
   - KP 6
   - {t: ',', s: <}
   - '&new_macro30'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Gui+ 2
+  - Gui+ 3
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - KP 0
@@ -237,7 +237,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
   - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - ':'
   - '?'
   snipe:
   - {t: '$$mdi:transfer$$', type: trans}
