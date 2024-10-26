@@ -35,10 +35,10 @@ layers:
   - LEFT WIN
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-space$$', h: mouse}
-  - {t: LANGUAGE 5, h: scroll}
+  - {t: LANG ZENKAKUHANKAKU, h: scroll}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', h: symbol}
-  - LANG5
+  - '&mkp MB1'
   number:
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
