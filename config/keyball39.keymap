@@ -95,10 +95,10 @@
         number_layer {
             label = "NUM";
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&none         &kp DOWN      &kp UP_ARROW  &kp RIGHT     &none                         &none         &mkp MB1      &none         &none         &none
-&none         &none         &none         &none         &none                         &none         &none         &trans        &trans        &none
-&trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans                                                  &bt BT_CLR
+&bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+&none           &kp DOWN        &kp UP_ARROW    &kp RIGHT       &none                           &none         &mkp MB1      &none         &none         &none
+&kp LANG1       &kp LANG2       &kp LANGUAGE_3  &kp LANGUAGE_4  &kp LANGUAGE_5                  &none         &none         &trans        &trans        &none
+&kp LANGUAGE_6  &kp LANGUAGE_7  &trans          &trans          &trans          &trans  &trans  &trans                                                  &bt BT_CLR
             >;
         };
 
