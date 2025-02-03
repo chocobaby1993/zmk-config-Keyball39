@@ -200,7 +200,7 @@ layers:
   - FUN
   - '?'
   SCROLL:
-  - C
+  - B
   - '*'
   - KP PLUS
   - KP MINUS
