@@ -1,9 +1,9 @@
 layers:
-  default:
+  QWRT:
   - Q
   - W
   - E
-  - {t: R, h: symbol}
+  - {t: R, h: SYM}
   - T
   - Y
   - U
@@ -13,13 +13,13 @@ layers:
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - S
   - D
-  - {t: F, h: mouse}
-  - {t: G, h: scroll}
+  - {t: F, h: MOUSE}
+  - {t: G, h: SCROLL}
   - H
   - J
   - K
   - L
-  - {t: '-', h: number, s: _}
+  - {t: '-', h: NUM, s: _}
   - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - X
   - C
@@ -29,17 +29,17 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - scroll
+  - SCROLL
   - $$mdi:apple-keyboard-shift$$
   - '&mkp MB2'
   - LEFT WIN
-  - {t: LANGUAGE 2, h: number}
-  - {t: '$$mdi:keyboard-space$$', h: mouse}
-  - {t: LANGUAGE 1, h: scroll}
+  - {t: LANGUAGE 2, h: NUM}
+  - {t: '$$mdi:keyboard-space$$', h: MOUSE}
+  - {t: LANGUAGE 1, h: SCROLL}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:keyboard-return$$', h: symbol}
+  - {t: '$$mdi:keyboard-return$$', h: SYM}
   - '&mkp MB1'
-  number:
+  NUM:
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
@@ -79,23 +79,23 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:bluetooth-off$$
-  symbol:
+  SYM:
   - $
   - {t: '''', s: '"'}
   - (
   - {t: ), type: held}
-  - Alt+ $$mdi:arrow-up-bold$$
-  - Ctl+Sft+ O
+  - Alt+$$mdi:arrow-up-bold$$
+  - Ctl+Sft+O
   - {t: D, h: '$$mdi:apple-keyboard-command$$'}
   - HOME
-  - Gui+ L
+  - Gui+L
   - $$mdi:keyboard-esc$$
-  - Sft+ 2
-  - {t: Sft+ 5, s: Sft+ %}
-  - {t: Sft+ \, s: Sft+ |}
-  - Sft+ 6
-  - Alt+ $$mdi:arrow-left-bold$$
-  - Ctl+Sft+ N
+  - Sft+2
+  - {t: Sft+5, s: Sft+%}
+  - {t: Sft+\, s: Sft+|}
+  - Sft+6
+  - Alt+$$mdi:arrow-left-bold$$
+  - Ctl+Sft+N
   - '&mkp MB1'
   - $$mdi:arrow-up-bold$$
   - '&mkp MB2'
@@ -104,22 +104,22 @@ layers:
   - LEFT WIN
   - '"'
   - '#'
-  - Alt+ $$mdi:arrow-right-bold$$
-  - Ctl+ N
+  - Alt+$$mdi:arrow-right-bold$$
+  - Ctl+N
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: ;, s: ':'}
-  - Ctl+Sft+ KP PLUS
-  - Sft+Ctl+ KP MINUS
-  - Alt+ F4
+  - Ctl+Sft+KP PLUS
+  - Sft+Ctl+KP MINUS
+  - Alt+F4
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:keyboard-tab$$
   - INT MUHENKAN
   - $$mdi:apple-keyboard-control$$
   - {type: held alternate}
   - '&new_macro40'
-  function:
+  FUN:
   - F1
   - F2
   - F3
@@ -159,36 +159,36 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  mouse:
-  - Ctl+ W
+  MOUSE:
+  - Ctl+W
   - F2
   - F3
   - F4
   - F5
-  - Ctl+ X
+  - Ctl+X
   - F7
-  - Ctl+ PgUp
-  - Ctl+ PgDn
-  - {t: Ctl+ 1, s: Ctl+ !}
+  - Ctl+PgUp
+  - Ctl+PgDn
+  - {t: Ctl+1, s: Ctl+!}
   - $$mdi:apple-keyboard-control$$
-  - Ctl+ T
+  - Ctl+T
   - F6
   - {t: F12, type: held}
   - '&mkp MB2'
-  - Ctl+ C
+  - Ctl+C
   - $$mdi:mouse-left-click-outline$$
-  - Gui+ $$mdi:arrow-up-bold$$
+  - Gui+$$mdi:arrow-up-bold$$
   - $$mdi:mouse-right-click-outline$$
-  - {t: Ctl+ 1, s: Ctl+ !}
+  - {t: Ctl+1, s: Ctl+!}
   - $$mdi:apple-keyboard-shift$$
   - HOME
   - END
   - $$mdi:apple-keyboard-shift$$
   - '&mkp MB1'
-  - Ctl+ V
-  - Gui+ $$mdi:arrow-left-bold$$
-  - Gui+ $$mdi:arrow-down-bold$$
-  - Gui+ $$mdi:arrow-right-bold$$
+  - Ctl+V
+  - Gui+$$mdi:arrow-left-bold$$
+  - Gui+$$mdi:arrow-down-bold$$
+  - Gui+$$mdi:arrow-right-bold$$
   - '!'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - KP NUMLOCK
@@ -197,10 +197,10 @@ layers:
   - {type: held alternate}
   - LANGUAGE 5
   - {t: '$$mdi:transfer$$', type: trans}
-  - function
+  - FUN
   - '?'
-  scroll:
-  - '&new_macro10'
+  SCROLL:
+  - C
   - '*'
   - KP PLUS
   - KP MINUS
@@ -210,19 +210,19 @@ layers:
   - KP 8
   - KP 9
   - {t: /, s: '?'}
-  - '&new_macro20'
-  - Sft+Ctl+ $$mdi:keyboard-tab$$
-  - Ctl+ $$mdi:keyboard-tab$$
-  - Gui+ 4
-  - {t: 'Alt+ $$mdi:apple-keyboard-control$$', type: held}
+  - A
+  - Sft+Ctl+$$mdi:keyboard-tab$$
+  - Ctl+$$mdi:keyboard-tab$$
+  - Gui+4
+  - {t: 'Alt+$$mdi:apple-keyboard-control$$', type: held}
   - .
   - KP 4
   - KP 5
   - KP 6
   - {t: ',', s: <}
-  - '&new_macro30'
-  - Gui+ 2
-  - Gui+ 3
+  - B
+  - Gui+2
+  - Gui+3
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - KP 0
@@ -239,7 +239,7 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - ':'
   - '?'
-  snipe:
+  SNIPE:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
